@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected PDF</title>
+    <script>
+        function checkPassword() {
+            var password = prompt("Enter password:");
+            if (password === "onlypeace") { // Change "yourpassword" to your actual password
+                window.location.href = "open.pdf"; // Ensure this matches your uploaded file's name
+            } else {
+                alert("Incorrect password!");
+            }
+        }
+    </script>
+</head>
+<body onload="checkPassword()">
+</body>
+</html>
 
